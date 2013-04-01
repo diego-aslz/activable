@@ -9,7 +9,9 @@ This gem allows a model to be activated or deactivated, saving informations like
 
 Add this line to your application's Gemfile:
 
-    gem 'activable', git: 'git://github.com/nerde/activable.git'
+```ruby
+gem 'activable', git: 'git://github.com/nerde/activable.git'
+```
 
 And then execute:
 
@@ -21,7 +23,7 @@ Add to your model:
 
 ```ruby
 class User < ActiveRecord::Base
-  include Activable
+  is_activable
   # ...
 end
 ```
