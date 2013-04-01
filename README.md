@@ -9,7 +9,7 @@ This gem allows a model to be activated or deactivated, saving informations like
 
 Add this line to your application's Gemfile:
 
-    gem 'activable'
+    gem 'activable', git: 'git://github.com/nerde/activable.git'
 
 And then execute:
 
