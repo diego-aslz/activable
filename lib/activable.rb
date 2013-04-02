@@ -61,7 +61,7 @@ module Activable
       end
     end
 
-    private
+    protected
 
     def verify_responsible(options)
       config = Activable
@@ -73,6 +73,12 @@ module Activable
           raise "Object of type #{resp.class.name} is not a " + config.responsible
         end
       end
+    end
+  end
+
+  module Models
+    def is_activable
+      include Activable::Methods
     end
   end
 end
