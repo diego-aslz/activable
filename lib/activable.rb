@@ -3,10 +3,18 @@ require "activable/version"
 require 'active_record'
 
 module Activable
+  mattr_accessor :has_responsible
   @@has_responsible = true
+  mattr_accessor :responsible
   @@responsible = "User"
 
+  def self.setup
+    yield self
+  end
+
   module Methods
+    extend ActiveSupport::Concern
+
     def activate(otions={})
       verify_responsible(options)
       unless active
@@ -45,11 +53,11 @@ module Activable
       save
     end
 
-    def self.included(base)
+    included do
       config = Activable
       if config.has_responsible
-        base.belongs_to :activated_by, :class_name => config.responsible
-        base.belongs_to :deactivated_by, :class_name => config.responsible
+        belongs_to :activated_by, :class_name => config.responsible
+        belongs_to :deactivated_by, :class_name => config.responsible
       end
     end
 
@@ -65,11 +73,6 @@ module Activable
           raise "Object of type #{resp.class.name} is not a " + config.responsible
         end
       end
-
     end
-  end
-
-  def self.setup
-    yield self
   end
 end

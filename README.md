@@ -28,6 +28,10 @@ class User < ActiveRecord::Base
 end
 ```
 
+## Testing the gem
+
+    rspec spec
+
 ## Contributing
 
 1. Fork it
