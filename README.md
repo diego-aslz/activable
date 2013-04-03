@@ -3,8 +3,6 @@
 This gem allows a model to be activated or deactivated, saving informations like
 'activated_at', 'deactivated_at', 'activated_by' and 'deactivated_by'.
 
-**THIS GEM IS NOT READY YET**
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,11 +17,37 @@ And then execute:
 
 ## Usage
 
-Add to your model:
+Create the initializer file:
+
+    $ rails g activable:install
+
+Configure the models you want to be "activable":
+
+    $ rails g activable Product
+    $ rails g activable Category
+    $ rails g activable User
+    $ rake db:migrate
+
+Your models will look like this:
 
 ```ruby
-class User < ActiveRecord::Base
+class Product < ActiveRecord::Base
   is_activable
+  # ...
+end
+```
+
+Optionally, you can customize each model to have a differente configuration from
+the on in the initializer file:
+
+```ruby
+class Product < ActiveRecord::Base
+  is_activable has_responsible: false
+  # ...
+end
+
+class Category < ActiveRecord::Base
+  is_activable responsible: "Admin"
   # ...
 end
 ```

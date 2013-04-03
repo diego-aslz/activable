@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Activable::VERSION
   spec.authors       = ["Diego Selzlein"]
   spec.email         = ["diegoselzlein@gmail.com"]
-  spec.description   = %q{Allow a model to be activated and deactivated}
-  spec.summary       = %q{Allow a model to be activated and deactivated}
+  spec.description   = %q{Allows a model to be activated and deactivated}
+  spec.summary       = %q{Allows a model to be activated and deactivated}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,7 +19,4 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "generator_spec"
 end

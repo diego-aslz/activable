@@ -4,4 +4,9 @@ source 'https://rubygems.org'
 gemspec
 
 gem "rails", "~> 3.2.13"
-gem "sqlite3"
+group :test do
+  gem "sqlite3"
+  gem "rspec"
+  gem "factory_girl"
+  gem "generator_spec"
+end
