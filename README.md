@@ -36,8 +36,7 @@ class Product < ActiveRecord::Base
 end
 ```
 
-Optionally, you can customize each model to have a different configuration from
-that in the initializer file:
+Optionally, you can customize Activable configuration for each model:
 
 ```ruby
 class Product < ActiveRecord::Base
@@ -53,14 +52,14 @@ end
 
 ### Working with it
 
-By default, new objects of a "activable" model are active:
+By default, new objects of an "activable" model are active:
 
 ```ruby
 p = Product.new
 p.active? # => true
 ```
 
-If your model has a responsible, you **must** provide it before saving your object:
+If your record has a responsible, you **must** provide it before saving your object:
 
 ```ruby
 p = Product.new
@@ -71,22 +70,22 @@ p = Product.new
 p.activate responsible: current_user
 ```
 
-The same rule applies when deactivating an object:
+The same rule applies when deactivating:
 
 ```ruby
 product.deactivate responsible: current_user
 ```
 
 You can check whether it is active or not whenever you want by calling the method
-`active?`. Another useful informations are stored and you can see them:
+`active?`. Another useful informations are persisted and you can see them:
 
 ```ruby
 product.activated_at
 product.deactivated_at
 
 # And if it has a responsible:
-product.activated_by # if has responsible
-product.deactivated_by # if has responsible
+product.activated_by
+product.deactivated_by
 ```
 
 ## Testing the gem
