@@ -36,8 +36,8 @@ class Product < ActiveRecord::Base
 end
 ```
 
-Optionally, you can customize each model to have a differente configuration from
-the on in the initializer file:
+Optionally, you can customize each model to have a different configuration from
+that in the initializer file:
 
 ```ruby
 class Product < ActiveRecord::Base
