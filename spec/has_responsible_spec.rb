@@ -11,22 +11,22 @@ describe User do
   end
 
   it 'cannot be saved without a responsible' do
-    u = User.new(email: 'test@nomail.com')
+    u = FactoryGirl.build(:user)
     u.save.should_not be_true
     u.errors[:activated_by_id].should_not be_empty
   end
 
   it 'is active by default' do
-    u = User.new(email: 'test@nomail.com')
+    u = FactoryGirl.build(:user)
     u.active?.should be_true
     u.activated_at.should_not be_nil
   end
 
   it 'can be activated' do
-    admin = User.new(email: 'admin@nomail.com')
+    admin = FactoryGirl.build(:user)
     admin.save(validate: false)
 
-    u = User.new(email: 'test@nomail.com')
+    u = FactoryGirl.build(:another_user)
 
     u.activate(responsible: admin)
     u.save.should be_true, "Activated user should be saved. " +
@@ -39,16 +39,16 @@ describe User do
   end
 
   it 'can be deactivated' do
-    another_admin = User.new(email: 'another_admin@nomail.com')
-    another_admin.save(validate: false)
+    another_user = FactoryGirl.build(:another_user)
+    another_user.save(validate: false)
 
-    u = User.new(email: 'test@nomail.com')
+    u = FactoryGirl.build(:another_user)
 
-    u.deactivate(responsible: another_admin).should be_true
+    u.deactivate(responsible: another_user)
     u.save.should be_true, "Deactivated user should be saved. " +
         u.errors.full_messages.to_s
     u.active?.should_not be_true
-    u.deactivated_by.should be_equal another_admin
+    u.deactivated_by.should be_equal another_user
     u.deactivated_at.should_not be_nil
   end
 end

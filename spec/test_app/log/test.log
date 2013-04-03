@@ -1097,3 +1097,385 @@ Migrating to AddActivableToUsers (20130403135220)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:29:31 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:29:31 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:29:31 UTC +00:00], ["deactivated_by_id", 69], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:29:31 UTC +00:00]]
   [1m[35m (95.4ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:35:49 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:35:49 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:35:49 UTC +00:00]]
+  [1m[36m (125.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["activated_by_id", 71], ["active", true], ["created_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00]]
+  [1m[35m (92.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00]]
+  [1m[36m (84.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00], ["deactivated_by_id", 73], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:35:50 UTC +00:00]]
+  [1m[35m (103.7ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00]]
+  [1m[36m (124.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["activated_by_id", 75], ["active", true], ["created_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00]]
+  [1m[35m (90.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00]]
+  [1m[36m (85.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00], ["deactivated_by_id", 77], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:36:13 UTC +00:00]]
+  [1m[35m (128.6ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00]]
+  [1m[36m (123.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["activated_by_id", 79], ["active", true], ["created_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00]]
+  [1m[35m (90.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_admin@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00]]
+  [1m[36m (86.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00], ["deactivated_by_id", 81], ["email", "test@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:37:27 UTC +00:00]]
+  [1m[35m (95.4ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00]]
+  [1m[36m (126.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["activated_by_id", 83], ["active", true], ["created_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00]]
+  [1m[35m (92.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:39:35 UTC +00:00]]
+  [1m[36m (188.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:39:36 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:39:36 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:39:36 UTC +00:00], ["deactivated_by_id", 85], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:39:36 UTC +00:00]]
+  [1m[35m (83.2ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130403185451')[0m
+  [1m[35m (127.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.8ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00]]
+  [1m[36m (118.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00]]
+  [1m[35m (91.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["activated_by_id", 87], ["active", true], ["created_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00]]
+  [1m[36m (84.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00]]
+  [1m[35m (97.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00], ["deactivated_by_id", 89], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:56:37 UTC +00:00]]
+  [1m[36m (83.4ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.8ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 03 Apr 2013 18:58:39 UTC +00:00], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 18:58:39 UTC +00:00]]
+  [1m[36m (119.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00]]
+  [1m[35m (87.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["activated_by_id", 91], ["active", true], ["created_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00]]
+  [1m[36m (90.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00]]
+  [1m[35m (84.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00], ["deactivated_by_id", 93], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 18:58:40 UTC +00:00]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" ADD "activated_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "categories" ADD "deactivated_at" datetime[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "categories" ADD "activated_by_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "categories" ADD "deactivated_by_id" integer[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130403190146')
+  [1m[36m (107.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[36m (129.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[35m (85.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[36m (86.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[35m (88.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", 95], ["active", true], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[36m (106.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[35m (86.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00], ["deactivated_by_id", 97], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:02:35 UTC +00:00]]
+  [1m[36m (86.9ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.5ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00]]
+  [1m[36m (124.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00]]
+  [1m[35m (86.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:06:31 UTC +00:00]]
+  [1m[36m (87.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00]]
+  [1m[35m (113.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["activated_by_id", 99], ["active", true], ["created_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00]]
+  [1m[36m (94.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00]]
+  [1m[35m (86.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00], ["deactivated_by_id", 101], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:06:32 UTC +00:00]]
+  [1m[36m (99.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.5ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00]]
+  [1m[36m (109.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:24 UTC +00:00]]
+  [1m[35m (114.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00]]
+  [1m[36m (89.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00]]
+  [1m[35m (92.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["activated_by_id", 103], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00]]
+  [1m[36m (92.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00]]
+  [1m[35m (87.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00], ["deactivated_by_id", 105], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:25 UTC +00:00]]
+  [1m[36m (97.7ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:43 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:43 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:43 UTC +00:00]]
+  [1m[36m (128.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[35m (86.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[36m (86.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[35m (86.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", 107], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[35m (88.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00], ["deactivated_by_id", 109], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:07:44 UTC +00:00]]
+  [1m[36m (95.2ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:09 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:09 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:09 UTC +00:00]]
+  [1m[36m (121.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[35m (86.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[36m (99.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[35m (103.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", 111], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[36m (92.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[35m (88.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00], ["deactivated_by_id", 113], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:10 UTC +00:00]]
+  [1m[36m (85.6ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00]]
+  [1m[36m (128.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00]]
+  [1m[35m (87.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00]]
+  [1m[36m (87.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00]]
+  [1m[35m (89.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["activated_by_id", 115], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:56 UTC +00:00]]
+  [1m[36m (93.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00]]
+  [1m[35m (100.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00], ["deactivated_by_id", 117], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:08:57 UTC +00:00]]
+  [1m[36m (85.5ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402122537)
+Migrating to CreateProducts (20130403123944)
+Migrating to AddActivableToUsers (20130403135220)
+Migrating to CreateCategories (20130403185451)
+Migrating to AddActivableToCategories (20130403190146)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00]]
+  [1m[36m (125.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:09:45 UTC +00:00]]
+  [1m[35m (87.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("activated_at", "activated_by_id", "created_at", "deactivated_at", "deactivated_by_id", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["activated_by_id", nil], ["created_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_by_id", nil], ["name", "Eletronics"], ["updated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00]]
+  [1m[36m (98.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00]]
+  [1m[35m (107.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["activated_by_id", 119], ["active", true], ["created_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00]]
+  [1m[36m (106.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["activated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_at", nil], ["deactivated_by_id", nil], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00]]
+  [1m[35m (86.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("activated_at", "activated_by_id", "active", "created_at", "deactivated_at", "deactivated_by_id", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["activated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["activated_by_id", nil], ["active", true], ["created_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00], ["deactivated_by_id", 121], ["email", "another_user@nomail.com"], ["updated_at", Wed, 03 Apr 2013 19:09:46 UTC +00:00]]
+  [1m[36m (85.4ms)[0m  [1mcommit transaction[0m
