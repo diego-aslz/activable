@@ -26,6 +26,7 @@ describe Category do
     c.activated_at.should_not be_nil
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should be_nil
+    User.active.include?(u).should be_true
   end
 
   it 'can be deactivated with no responsible' do
@@ -37,5 +38,6 @@ describe Category do
     c.active?.should_not be_true
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should_not be_nil
+    User.active.include?(u).should_not be_true
   end
 end
