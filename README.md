@@ -88,6 +88,13 @@ product.activated_by
 product.deactivated_by
 ```
 
+Also, this gem creates two useful scopes:
+
+```ruby
+Product.active
+Product.inactive
+```
+
 ## Testing the gem
 
     rspec spec

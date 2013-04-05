@@ -26,6 +26,7 @@ describe Category do
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should be_nil
     Category.active.include?(c).should be_true
+    Category.inactive.include?(c).should_not be_true
   end
 
   it 'can be deactivated with no responsible' do
@@ -37,5 +38,6 @@ describe Category do
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should_not be_nil
     Category.active.include?(c).should_not be_true
+    Category.inactive.include?(c).should be_true
   end
 end

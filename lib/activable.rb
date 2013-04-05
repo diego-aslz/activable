@@ -53,6 +53,8 @@ module Activable
       validates_presence_of :activated_at
       scope :active, where('deactivated_at is null or activated_at is null or' +
           ' activated_at >= deactivated_at')
+      scope :inactive, where('deactivated_at is not null and activated_at is not' +
+          ' null and activated_at < deactivated_at')
       if self.activable_config[:has_responsible]
         belongs_to :activated_by, :class_name => self.activable_config[:responsible]
         belongs_to :deactivated_by, :class_name => self.activable_config[:responsible]
