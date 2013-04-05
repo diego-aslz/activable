@@ -23,7 +23,7 @@ module Activable
 
     def active?
       return true unless self.activated_at && self.deactivated_at
-      self.activated_at > self.deactivated_at
+      self.activated_at >= self.deactivated_at
     end
 
     def activate(options={})
@@ -51,6 +51,8 @@ module Activable
     included do
       after_initialize :init_active
       validates_presence_of :activated_at
+      scope :active, where('deactivated_at is null or activated_at is null or' +
+          ' activated_at >= deactivated_at')
       if self.activable_config[:has_responsible]
         belongs_to :activated_by, :class_name => self.activable_config[:responsible]
         belongs_to :deactivated_by, :class_name => self.activable_config[:responsible]
