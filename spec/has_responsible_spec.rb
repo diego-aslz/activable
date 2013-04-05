@@ -36,6 +36,7 @@ describe User do
     u.activated_at.should_not be_nil
     u.deactivated_by.should be_nil
     u.deactivated_at.should be_nil
+    User.active.include?(u).should be_true
   end
 
   it 'can be deactivated' do
@@ -50,5 +51,6 @@ describe User do
     u.active?.should_not be_true
     u.deactivated_by.should be_equal another_user
     u.deactivated_at.should_not be_nil
+    User.active.include?(u).should_not be_true
   end
 end
