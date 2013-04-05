@@ -18,26 +18,24 @@ describe Category do
   it 'can be activated with no responsible' do
     c = FactoryGirl.build(:category)
 
-    c.activate
-    c.save.should be_true, "Activated category with no responsible should be saved. " +
+    c.activate!.should be_true, "Activated category with no responsible should be saved. " +
         c.errors.full_messages.to_s
     c.active?.should be_true
     c.activated_by_id.should be_nil
     c.activated_at.should_not be_nil
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should be_nil
-    User.active.include?(u).should be_true
+    Category.active.include?(c).should be_true
   end
 
   it 'can be deactivated with no responsible' do
     c = FactoryGirl.build(:category)
 
-    c.deactivate
-    c.save.should be_true, "Deactivated category with no responsible should be saved. " +
+    c.deactivate!.should be_true, "Deactivated category with no responsible should be saved. " +
         c.errors.full_messages.to_s
     c.active?.should_not be_true
     c.deactivated_by_id.should be_nil
     c.deactivated_at.should_not be_nil
-    User.active.include?(u).should_not be_true
+    Category.active.include?(c).should_not be_true
   end
 end
